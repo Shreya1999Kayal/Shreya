@@ -1,0 +1,266 @@
+.buttoncss {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #15BD40;
+    border: none;
+    width: 85%;
+    height: 43px;
+    display: block;
+    touch-action: manipulation; 
+    /*disable double tap to zoom*/
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: none;
+}
+
+button:hover {
+    background-color: #045819;
+    color: white;
+    border: 2px solid black;
+}
+
+.fa-facebook {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-facebook:hover {
+    color: #316cec;
+}
+
+.fa-twitter {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-twitter:hover {
+    color: #2361e8;
+}
+
+.fa-youtube {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-youtube:hover {
+    color: #e00202;
+}
+
+.fa-linkedin {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-linkedin:hover {
+    color: #0e3bee;
+}
+
+.fa-pinterest {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-pinterest:hover {
+    color: #f60808ef;
+}
+
+.fa-instagram {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+/* cant understand copied from internet */
+.fa-instagram:hover {
+
+    background: radial-gradient(circle farthest-corner at 30% 107%,
+            rgb(253, 244, 151) 0%,
+            rgb(253, 89, 73) 45%,
+            rgb(214, 36, 159) 60%,
+            rgb(40, 90, 235) 90%);
+}
+
+.fa-google {
+    transition: color 1s ease;
+    /* Smooth transition for color change */
+}
+
+.fa-google:hover {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.appstore {
+    margin-top: 100px;
+    margin-left: 40px;
+    text-align: left;
+    border: solid white;
+    padding: 5px;
+    font-weight: 100;
+    padding-right: 300px;
+}
+
+.spanclass {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f6f6f6;
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+}
+
+.strongclass {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f6f6f6;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 70px;
+
+}
+
+.app {
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    word-spacing: 5px;
+    color: #2e2c2c;
+}
+
+.price {
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    word-spacing: 5px;
+    color: #5e5c5c;
+}
+
+.basicplan {
+    border-bottom: 0.1 solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ddcece;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 1px;
+
+}
+
+.basicplansub {
+    background-color: #f6eded;
+    border-bottom: 1px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    height: 200px;
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(235, 224, 224);
+    font-weight: bold;
+}
+
+.ullist {
+    list-style-type: none;
+    background-color: #f6eded;
+    border-bottom: 0.1 solid transparent;
+    font-family: 'Times New Roman', Times, serif;
+    height: 560px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 28px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bestplan {
+    border-bottom: 0.1 solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #414040;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    padding: 20px;
+    margin-bottom: 1px;
+}
+
+.bestplansub {
+    background-color: #f6eded;
+    border-bottom: 1px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    height: 200px;
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(235, 224, 224);
+    font-weight: bold;
+}
+
+.bestplansup {
+    color: #9a9898;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+.bestplanullist {
+    list-style-type: none;
+    background-color: #f6eded;
+    border-bottom: 0.1 solid transparent;
+    font-family: 'Times New Roman', Times, serif;
+    height: 600px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 44px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#premiumplan {
+    border-bottom: 0.1 solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ddcece;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 1px;
+}
+
+
+#premiumplansup {
+    background-color: #f6eded;
+    border-bottom: 1px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    height: 200px;
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(235, 224, 224);
+    font-weight: bold;
+}
+
+#premiumplanlist {
+    list-style-type: none;
+    background-color: #f6eded;
+    border-bottom: 0.1 solid transparent;
+    font-family: 'Times New Roman', Times, serif;
+    height: 580px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 34px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
