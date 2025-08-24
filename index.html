@@ -9,6 +9,8 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/950db43c22.js"></script>
   <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 </head>
 
@@ -16,42 +18,56 @@
 <body>
 
   <!-- header section -->
-   <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;" data-bs-theme="light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #0d6efd;" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- Logo / Brand -->
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <i class="fas fa-code"></i> Food Website
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white fw-semibold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu shadow">
+              <li><a class="dropdown-item" href="#">Home Delivery</a></li>
+              <li><a class="dropdown-item" href="#">Franchise</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Restaurants</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn btn-light rounded-pill" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+
 
   <!-- banner section -->
   <div id="carouselExampleCaptions" class="carousel slide">
@@ -118,36 +134,39 @@
               <h4 class="card-title">Card One</h4>
               <h6 class="card-subtitle">card 1 subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and fill the content.</p>
-              
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+
+              <!-- Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
                 Open Details Page
-                </button>
+              </button>
 
 
-                <!-- Modal -->
-                <div class="modal" id="myModal">
+
+              <div class="modal fade" id="myModal">
                 <div class="modal-dialog">
-                <div class="modal-content">
+                  <div class="modal-content">
 
-      <!-- Modal Header -->
-                 <div class="modal-header">
-                 <h4 class="modal-title">Modal Heading</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                 </div>
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Food Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Welcome to this beautifully designed modal!
+                      You can customize the content as per your needs.
+                      This design is clean, modern, and fully responsive.
+                    </div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
 
-    </div>
-  </div>
-</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -158,7 +177,39 @@
             <div class="card-body">
               <h5 class="card-title">Card Two</h5>
               <p class="card-text">Some quick example text to build on the card title and fill the content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <!-- Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Open Details Page
+              </button>
+
+
+
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Food Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Welcome to this beautifully designed modal!
+                      You can customize the content as per your needs.
+                      This design is clean, modern, and fully responsive.
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -169,7 +220,39 @@
             <div class="card-body">
               <h5 class="card-title">Card Three</h5>
               <p class="card-text">Some quick example text to build on the card title and fill the content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <!-- Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Open Details Page
+              </button>
+
+
+
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Food Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Welcome to this beautifully designed modal!
+                      You can customize the content as per your needs.
+                      This design is clean, modern, and fully responsive.
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -306,18 +389,18 @@
           <div class="chef-card">
             <img src="/images/ChefSanjeev.jpg" alt="chef Sanjeev Kapoor" height="175vw" width="100%"
               style="border-radius: 15px 50px 30px 5px; border: 1px solid black;" />
-              <div class="card-body">
-            <h4 class="card-title">Sanjeev Kapoor</h4>
-            <p class="card-subtitle">Indian Chef</p>
+            <div class="card-body">
+              <h4 class="card-title">Sanjeev Kapoor</h4>
+              <p class="card-subtitle">Indian Chef</p>
+            </div>
           </div>
-        </div>
         </div>
 
         <div class="col-md-3">
           <div class="chef-card">
             <img src="/images/chefvikas.jpg" alt="chef Vikas Khanna" height="100%" width="100%"
               style="border-radius: 15px 50px 30px 5px;" />
-              <div class="card-body"></div>
+            <div class="card-body"></div>
             <h4 class="card-title">Vikas Khanna</h4>
             <p class="card-subtitle">Uk Chef</p>
           </div>
@@ -334,7 +417,7 @@
       <div class="row justify-content-center mb-4">
         <div class="col-md-8 text-center">
           <h1 style="margin-bottom: 40px; font-size:60px;font-family:'Robota',sans-serif;line-height: 1.1;">Pricing</h1>
-          <p class="price">            
+          <p class="price">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui hic laboriosam odio doloribus suscipit error
             nostrum totam dignissimos esse numquam voluptatum.
           </p>
@@ -378,8 +461,8 @@
             </ul>
           </div>
         </div>
-        
-        
+
+
 
         <!--Best PLan-->
         <div class="col-md-4">
@@ -388,8 +471,7 @@
               Best Plan</h1>
 
             <h1 class="bestplansub">
-              <sup>$</sup>49<sub
-                class="bestplansup">/mon</sub>
+              <sup>$</sup>49<sub class="bestplansup">/mon</sub>
             </h1>
 
             <ul class="bestplanullist">
@@ -430,6 +512,7 @@
     </div>
   </section>
 
+  <!-- Subscribe to our newsletter -->
   <section class="py-5">
     <div class="container text-center">
       <h2 class="mb-4">Subscribe to Our Newsletter</h2>
@@ -444,6 +527,7 @@
       </form>
   </section>
 
+  <!-- icons -->
   <section class="d-flex align-items-center min-vh-75 py-5">
     <div class="container text-center">
       <div class="icon">
@@ -458,16 +542,76 @@
     </div>
   </section>
 
- 
+  <!-- video -->
+  <section class="d-flex align-items-center min-vh-75 py-5">
+    <div class="container-fluid" style="margin: 0;">
 
-<div style="position: relative; width: 400px;">
-  <video width="400" controls>
-    <source src="./images/1111421-hd_1920_1080_30fps.mp4" type="video/mp4">
-    Your browser does not support HTML video.
-  </video>
-  <img src="./images/heart.png" alt="Heart Icon" 
-       style="position: absolute; top: 10px; left: 10px; width: 40px; height: 30px; cursor: pointer;" />
-</div>
+      <!-- Video Row -->
+      <div class="row text-center justify-content-center">
+
+        <!-- Video 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 videoclass">
+          <video class="img-fluid rounded" controls>
+            <source src="/images/foodvideo1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <i class="fa-solid fa-heart heart-icon"></i>
+
+          <a href="/images/foodvideo1.mp4" download class="download-icon">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 videoclass">
+          <video class="img-fluid rounded" controls>
+            <source src="/images/foodvideo2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <i class="fa-solid fa-heart heart-icon"></i>
+          <a href="/images/foodvideo2.mp4" download class="download-icon">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 videoclass">
+          <video class="img-fluid rounded" controls muted>
+            <source src="/images/foodvideo3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <i class="fa-solid fa-heart heart-icon"></i>
+          <a href="/images/foodvideo3.mp4" download class="download-icon">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 videoclass">
+          <video class="img-fluid rounded" controls>
+            <source src="/images/foodvideo4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <i class="fa-solid fa-heart heart-icon"></i>
+          <a href="/images/foodvideo4.mp4" download class="download-icon">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Start download the app -->
   <section class="py-5" style="background-color: rgb(8, 225, 8)">
     <div class="container text-center text-white">
       <div class="row justify-content-center mb-4">
@@ -531,6 +675,50 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <!-- Company Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Food Website</h5>
+          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quo?</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-4 mb-4 text-center text-md-start">
+          <h5 class="fw-bold">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+
+      <div class="row text-center">
+        <p class="mb-0 small">&copy; 2025 MyCompany | All Rights Reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -540,4 +728,5 @@
     integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
